@@ -22,7 +22,7 @@ See [DECISIONS.md](./DECISIONS.md) for the three Decision Point write-ups.
 
 - **Next.js 14** (App Router, TypeScript) — UI and API routes in one deployable app
 - **Tailwind CSS** — styling
-- **JSON file storage** (`data/db.json`) — zero-dependency persistence; no external database needed
+- **Upstash Redis** for storage in production (Vercel), with a JSON-file fallback (`data/db.json`) for local dev — no setup needed to run locally
 - No authentication (per the rules) — everything is open to graders. No test credentials required.
 
 ## Run locally

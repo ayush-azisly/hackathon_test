@@ -23,7 +23,7 @@ export async function GET(req: NextRequest) {
     }
   }
 
-  const activities = getActivities({ type: type as never, from, to });
+  const activities = await getActivities({ type: type as never, from, to });
   return NextResponse.json({ activities });
 }
 
@@ -78,6 +78,6 @@ export async function POST(req: NextRequest) {
     );
   }
 
-  const activity = addActivity({ type, quantity, co2Kg: co2For(type, quantity), date });
+  const activity = await addActivity({ type, quantity, co2Kg: co2For(type, quantity), date });
   return NextResponse.json({ activity }, { status: 201 });
 }

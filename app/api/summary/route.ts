@@ -6,7 +6,7 @@ import { toDateString, weekEnd, weekStart } from "@/lib/week";
 export const dynamic = "force-dynamic";
 
 export async function GET() {
-  const all = getActivities();
+  const all = await getActivities();
   const total = round(all.reduce((s, a) => s + a.co2Kg, 0));
 
   const byCategory: Record<string, number> = {};
@@ -24,7 +24,7 @@ export async function GET() {
   const daysElapsed = dayOfWeek + 1;
   const projectedWeekTotal = round((weekTotal / daysElapsed) * 7);
 
-  const target = getTarget();
+  const target = await getTarget();
   return NextResponse.json({
     total,
     byCategory,
