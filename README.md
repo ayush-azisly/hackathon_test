@@ -4,7 +4,7 @@
 
 **Track:** PlanetPulse (Climate Tech) — a carbon footprint tracker that turns daily choices into a visible carbon footprint.
 
-**Live URL:** _to be added after deployment_
+**Live URL:** https://planetpulse-delta.vercel.app
 
 **Standard API implemented:** the app exposes a full REST API (documented below) alongside the UI. All five features are usable through both.
 
