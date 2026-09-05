@@ -38,3 +38,8 @@ next-env.d.ts
 # local data
 /data
 .env*
+
+# local tooling
+/.agents
+/.claude
+skills-lock.json
