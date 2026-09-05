@@ -1,6 +1,6 @@
 # 🌍 PlanetPulse — Carbon Footprint Tracker
 
-**Hackathon ID:** `YOUR_HACKATHON_ID_HERE` <!-- TODO: replace with the ID from your Team page before submitting -->
+**Hackathon ID:** `XXX_123`
 
 **Track:** PlanetPulse (Climate Tech) — a carbon footprint tracker that turns daily choices into a visible carbon footprint.
 
